@@ -138,22 +138,40 @@ nav ul a {
 }
 
 .toggle_button {
-    width: 40px;
-    height: 30px;
-    position: absolute;
-    top: 25px;
-    right: 25px;
+    width: 42px;
+    height: 42px;
+    position: relative; /*geändert von absolute auf relative*/
+    /*top: 25px;*/
+    right: 40px;
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: #aacd73;
+    /*flex-direction: column;
+    justify-content: space-around;*/
+    padding-left: 10px;
 }
 
 .bar {
     height: 6px;
-    width: 100%;
-    background: #aacd73;
+    width: 45px;
+    background: white;
     border-radius: 100px;
+    display: flex; /*?*/
+    position: absolute; /*geändert von relative auf absolut*/
 }
+
+/* linien für das hamburger-menü */
+.linie1 {
+    top: 4px;
+}
+
+.linie2 {
+    top: 18px;
+}
+
+.linie3 {
+    top: 32px;
+}
+
 
 
 
@@ -414,6 +432,30 @@ footer ul li a:hover {
     }
     #toggle_button:checked ~ ul {
         display: block;
+    }
+    
+    /* Zum Drehen lassen der Linien des Hamburger-Menüs bei Anklick: */
+    #toggle_button:checked  ~ .toggle_button .linie1 {
+        transform: rotate(-45deg);
+        transition: transform 0.75s;
+    }
+    #toggle_button:checked ~ .toggle_button .linie2 {
+        transform: rotate(-45deg);
+        transition: transform 0.75s;
+    }
+    #toggle_button:checked ~ .toggle_button .linie3 {
+        transform: rotate(-45deg);
+        transition: transform 0.75s;
+    }
+    /* Zum Zurückdrehenlassen der Linien des Hamburger-Menüs bei erneuten Anklicken: */
+    #toggle_button:enabled ~ .toggle_button .linie1 {
+        transition: transform 0.75s;
+    }
+    #toggle_button:enabled ~ .toggle_button .linie2 {
+        transition: transform 0.75s;
+    }
+    #toggle_button:enabled ~ .toggle_button .linie3 {
+        transition: transform 0.75s;
     }
 }
 
