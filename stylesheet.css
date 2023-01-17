@@ -51,6 +51,14 @@ h3 {
     font-size: 1.25rem;
 }
 
+.datenschutz h1 {
+    color: rgba(0, 0, 0, 0.82);
+}
+
+.impressum h1 {
+    color rgba(0, 0, 0, 0.82);
+}
+
 
 
 /*---------------------------------------*/
