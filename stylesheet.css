@@ -366,12 +366,10 @@ footer ul li a:hover {
     margin-bottom: 20px;
 }
 .impressum p {
-    width: max-content;
     text-align: center;
     margin: 0 auto;
 }
 .datenschutz p {
-    width: 100%;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 40px;
