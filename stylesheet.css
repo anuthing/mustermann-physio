@@ -6,6 +6,7 @@
     --text-color: rgba(0, 0, 0, 0.62);
     --link-color: rgba(0, 0, 0, 0.62);
     --background-color-alternative: #e1e1e1;
+    --lightbox-color: rgba(255, 255, 255, 0.82);
 }
 
 * {
